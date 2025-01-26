@@ -1,0 +1,3 @@
+# Uncommon HTML Bug: Incorrect use of innerHTML for appending elements
+
+This repository demonstrates an uncommon bug in HTML related to the use of `innerHTML` when appending elements to the DOM.  Using `innerHTML` to append complete HTML elements can be problematic for several reasons, including potential security risks if the added HTML comes from untrusted sources.  The provided solution showcases a safer method using the Document Object Model (DOM).
