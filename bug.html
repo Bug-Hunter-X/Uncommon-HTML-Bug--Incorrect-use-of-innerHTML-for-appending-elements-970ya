@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrectly using innerHTML to append a whole element
+    document.getElementById("myDiv").innerHTML += "<p>This is new text.</p>";
+    // Correct way to append the element
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is new text.";
+    document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
